@@ -31,17 +31,7 @@ Ao aplicar o modelo preditivo e calibrar as regras de negócio para componentes 
 
 O projeto foi estruturado seguindo rigorosamente as abstrações do padrão **SOLID** para garantir modularidade, desacoplamento e testabilidade:
 
----text
-├── data/                       # Arquivos de dados (histórico de vendas e compras)
-├── src/
-│   ├── data/                   # DataLoaders e DataGenerators (SRP/OCP)
-│   ├── features/               # Curva ABC e Engenharia de Variáveis Temporais
-│   ├── models/                 # Validador Temporal e Otimizador LightGBM
-│   ├── simulation/             # Simulador Financeiro & Regras de Negócio
-│   └── visualization/          # Exporters e arquivo unificado para Tableau (.csv)
-├── notebooks/
-│   └── 01_analise_exploratoria.ipynb  # Pipeline completo de execução
-└── README.md                   # Documentação do projeto
+![Arquitetura](docs/arquitetura.png)
 
 ---
 
