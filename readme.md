@@ -49,7 +49,7 @@ O projeto foi estruturado seguindo rigorosamente as abstrações do padrão **SO
 
 * **A. Simulação Financeira & Calibração de Regra de Negócio (Python)**: Para evitar que a volatilidade dos fornecedores inflasse o custo de peças caríssimas (Classe C), aplicamos a fórmula estatística de Greasley com uma trava de segurança no simulador.
 
-[Code Simulação](docs/code_protec_simulacao.png)
+(docs/code_protec_simulacao.png)
 
 * **Fórmula do Tableau para Alertas de Stockout (Lógica Não Agregada)**: No Tableau, para evitar mascarar ruídos diários com somatórios anuais, reescrevemos a fórmula de alerta para avaliar os registros dia a dia:
 
