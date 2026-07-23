@@ -1,14 +1,15 @@
-# Ignorar bases de dados locais por segurança e performance
-data/
-*.csv
-*.xlsx
-
-# Ignorar arquivos de ambiente virtual do Python
-venv/
+# Ambiente Virtual
 .venv/
+venv/
+env/
+
+# Cache do Python
 __pycache__/
+*.pyc
+
+# Arquivos do Checkpoint do Jupyter
 .ipynb_checkpoints/
 
-# Arquivos do sistema operacional
+# Arquivos de sistema
 .DS_Store
 Thumbs.db

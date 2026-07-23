@@ -1,0 +1,745 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dados_dashboard_protec' inline='true' name='federated.1as43rb1tmay0y1a509e51rvna6n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dados_dashboard_protec' name='textscan.03g0ebn1hm24rz19ongx01oponh1'>
+            <connection class='textscan' directory='C:/Users/ewert/projeto-previsao-demanda-protec/src/visualization' filename='dados_dashboard_protec.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03g0ebn1hm24rz19ongx01oponh1' name='dados_dashboard_protec.csv' table='[dados_dashboard_protec#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='data_registro' ordinal='0' />
+            <column datatype='integer' name='id_produto' ordinal='1' />
+            <column datatype='string' name='categoria_produto' ordinal='2' />
+            <column datatype='integer' name='total_vendido' ordinal='3' />
+            <column datatype='real' name='faturamento_diario' ordinal='4' />
+            <column datatype='string' name='classificacao_abc' ordinal='5' />
+            <column datatype='real' name='lag_1' ordinal='6' />
+            <column datatype='real' name='lag_2' ordinal='7' />
+            <column datatype='real' name='lag_7' ordinal='8' />
+            <column datatype='real' name='media_movel_3' ordinal='9' />
+            <column datatype='real' name='media_movel_7' ordinal='10' />
+            <column datatype='integer' name='dia_da_semana' ordinal='11' />
+            <column datatype='integer' name='mes' ordinal='12' />
+            <column datatype='real' name='previsao_demanda' ordinal='13' />
+            <column datatype='real' name='estoque_seguranca_ia' ordinal='14' />
+            <column datatype='real' name='custo_financeiro_ss_ia' ordinal='15' />
+            <column datatype='real' name='custo_financeiro_ss_tradicional' ordinal='16' />
+            <column datatype='real' name='economia_capital_giro' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_registro</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[data_registro]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>data_registro</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_produto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_produto]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>id_produto</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoria_produto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categoria_produto]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>categoria_produto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vendido</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_vendido]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>total_vendido</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>faturamento_diario</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[faturamento_diario]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>faturamento_diario</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classificacao_abc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[classificacao_abc]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>classificacao_abc</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lag_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lag_1]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>lag_1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lag_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lag_2]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>lag_2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lag_7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lag_7]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>lag_7</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_movel_3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[media_movel_3]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>media_movel_3</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_movel_7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[media_movel_7]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>media_movel_7</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dia_da_semana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dia_da_semana]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>dia_da_semana</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mes]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>mes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previsao_demanda</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[previsao_demanda]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>previsao_demanda</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estoque_seguranca_ia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estoque_seguranca_ia]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>estoque_seguranca_ia</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>custo_financeiro_ss_ia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[custo_financeiro_ss_ia]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>custo_financeiro_ss_ia</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>custo_financeiro_ss_tradicional</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[custo_financeiro_ss_tradicional]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>custo_financeiro_ss_tradicional</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>economia_capital_giro</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[economia_capital_giro]</local-name>
+            <parent-name>[dados_dashboard_protec.csv]</parent-name>
+            <remote-alias>economia_capital_giro</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Economia Total' datatype='real' name='[Calculation_2033844522975237]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([economia_capital_giro])' />
+      </column>
+      <column caption='Status de Alerta' datatype='string' name='[Calculation_2033844524838918]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [total_vendido] &gt; [estoque_seguranca_ia] THEN &quot;Risco de Stockout&quot;&#13;&#10;ELSEIF [total_vendido] == 0 THEN &quot;Sem Consumo Diário&quot;&#13;&#10;ELSE &quot;Estoque Saudável&quot;&#13;&#10;END' />
+      </column>
+      <column caption='dados_dashboard_protec.csv' datatype='table' name='[__tableau_internal_object_id__].[dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B]' role='measure' type='quantitative' />
+      <column caption='Classificacao Abc' datatype='string' name='[classificacao_abc]' role='dimension' type='nominal' />
+      <column caption='Custo Financeiro Ss Ia' datatype='real' name='[custo_financeiro_ss_ia]' role='dimension' type='ordinal' />
+      <column caption='Custo Financeiro Ss Tradicional' datatype='real' name='[custo_financeiro_ss_tradicional]' role='dimension' type='ordinal' />
+      <column caption='Data Registro' datatype='date' name='[data_registro]' role='dimension' type='ordinal' />
+      <column caption='Economia Capital Giro' datatype='real' name='[economia_capital_giro]' role='dimension' type='ordinal' />
+      <column caption='Estoque Seguranca Ia' datatype='real' name='[estoque_seguranca_ia]' role='dimension' type='ordinal' />
+      <column caption='Id Produto' datatype='integer' name='[id_produto]' role='dimension' type='ordinal' />
+      <column caption='Previsao Demanda' datatype='real' name='[previsao_demanda]' role='dimension' type='ordinal' />
+      <column caption='Total Vendido' datatype='integer' name='[total_vendido]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_2033844524838918]' derivation='None' name='[none:Calculation_2033844524838918:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2033844524838918]' derivation='User' name='[usr:Calculation_2033844524838918:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_2033844524838918:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Estoque Saudável&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Risco de Stockout&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_2033844524838918:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Estoque Saudável&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Risco de Stockout&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dados_dashboard_protec.csv' id='dados_dashboard_protec.csv_F830E99A8DB64665B7A4EE80040F0F0B'>
+            <properties context=''>
+              <relation connection='textscan.03g0ebn1hm24rz19ongx01oponh1' name='dados_dashboard_protec.csv' table='[dados_dashboard_protec#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='data_registro' ordinal='0' />
+                  <column datatype='integer' name='id_produto' ordinal='1' />
+                  <column datatype='string' name='categoria_produto' ordinal='2' />
+                  <column datatype='integer' name='total_vendido' ordinal='3' />
+                  <column datatype='real' name='faturamento_diario' ordinal='4' />
+                  <column datatype='string' name='classificacao_abc' ordinal='5' />
+                  <column datatype='real' name='lag_1' ordinal='6' />
+                  <column datatype='real' name='lag_2' ordinal='7' />
+                  <column datatype='real' name='lag_7' ordinal='8' />
+                  <column datatype='real' name='media_movel_3' ordinal='9' />
+                  <column datatype='real' name='media_movel_7' ordinal='10' />
+                  <column datatype='integer' name='dia_da_semana' ordinal='11' />
+                  <column datatype='integer' name='mes' ordinal='12' />
+                  <column datatype='real' name='previsao_demanda' ordinal='13' />
+                  <column datatype='real' name='estoque_seguranca_ia' ordinal='14' />
+                  <column datatype='real' name='custo_financeiro_ss_ia' ordinal='15' />
+                  <column datatype='real' name='custo_financeiro_ss_tradicional' ordinal='16' />
+                  <column datatype='real' name='economia_capital_giro' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Matriz de Alertas de Compra'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dados_dashboard_protec' name='federated.1as43rb1tmay0y1a509e51rvna6n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1as43rb1tmay0y1a509e51rvna6n'>
+            <column caption='Status de Alerta' datatype='string' name='[Calculation_2033844524838918]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [total_vendido] &gt; [estoque_seguranca_ia] THEN &quot;Risco de Stockout&quot;&#13;&#10;ELSEIF [total_vendido] == 0 THEN &quot;Sem Consumo Diário&quot;&#13;&#10;ELSE &quot;Estoque Saudável&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Data Registro' datatype='date' name='[data_registro]' role='dimension' type='ordinal' />
+            <column caption='Estoque Seguranca Ia' datatype='real' name='[estoque_seguranca_ia]' role='dimension' type='ordinal' />
+            <column caption='Id Produto' datatype='integer' name='[id_produto]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2033844524838918]' derivation='None' name='[none:Calculation_2033844524838918:nk]' pivot='key' type='nominal' />
+            <column-instance column='[data_registro]' derivation='None' name='[none:data_registro:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id_produto]' derivation='None' name='[none:id_produto:ok]' pivot='key' type='ordinal' />
+            <column caption='Total Vendido' datatype='integer' name='[total_vendido]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='267' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:Calculation_2033844524838918:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok] / [federated.1as43rb1tmay0y1a509e51rvna6n].[none:data_registro:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6F6FF394-2AE4-4BB3-B39F-9BCD6D22114F}' />
+    </worksheet>
+    <worksheet name='Monitor de Sazonalidade e Volatilidade'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dados_dashboard_protec' name='federated.1as43rb1tmay0y1a509e51rvna6n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1as43rb1tmay0y1a509e51rvna6n'>
+            <column caption='Data Registro' datatype='date' name='[data_registro]' role='dimension' type='ordinal' />
+            <column caption='Id Produto' datatype='integer' name='[id_produto]' role='dimension' type='ordinal' />
+            <column-instance column='[id_produto]' derivation='None' name='[none:id_produto:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[total_vendido]' derivation='Sum' name='[sum:total_vendido:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[data_registro]' derivation='Month-Trunc' name='[tmn:data_registro:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Vendido' datatype='integer' name='[total_vendido]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1as43rb1tmay0y1a509e51rvna6n].[sum:total_vendido:qk]</rows>
+        <cols>[federated.1as43rb1tmay0y1a509e51rvna6n].[tmn:data_registro:qk]</cols>
+      </table>
+      <simple-id uuid='{9625A35B-5455-44F4-B99C-8B9F3D90963A}' />
+    </worksheet>
+    <worksheet name='Painel de Controle de Giro'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dados_dashboard_protec' name='federated.1as43rb1tmay0y1a509e51rvna6n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1as43rb1tmay0y1a509e51rvna6n'>
+            <column caption='Custo Financeiro Ss Ia' datatype='real' name='[custo_financeiro_ss_ia]' role='dimension' type='ordinal' />
+            <column caption='Custo Financeiro Ss Tradicional' datatype='real' name='[custo_financeiro_ss_tradicional]' role='dimension' type='ordinal' />
+            <column caption='Data Registro' datatype='date' name='[data_registro]' role='dimension' type='ordinal' />
+            <column caption='Id Produto' datatype='integer' name='[id_produto]' role='dimension' type='ordinal' />
+            <column-instance column='[custo_financeiro_ss_ia]' derivation='None' name='[none:custo_financeiro_ss_ia:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[custo_financeiro_ss_tradicional]' derivation='None' name='[none:custo_financeiro_ss_tradicional:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id_produto]' derivation='None' name='[none:id_produto:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[data_registro]' derivation='Day-Trunc' name='[tdy:data_registro:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:custo_financeiro_ss_ia:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:custo_financeiro_ss_tradicional:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1as43rb1tmay0y1a509e51rvna6n].[none:custo_financeiro_ss_ia:qk] + [federated.1as43rb1tmay0y1a509e51rvna6n].[none:custo_financeiro_ss_tradicional:qk])</rows>
+        <cols>[federated.1as43rb1tmay0y1a509e51rvna6n].[tdy:data_registro:qk]</cols>
+      </table>
+      <simple-id uuid='{0EABA854-FE2A-4638-858B-CBC96515C594}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='14' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone h='98120' id='8' param='horz' type-v2='layout-flow' w='99034' x='483' y='940'>
+              <zone h='98120' id='6' type-v2='layout-basic' w='89378' x='483' y='940'>
+                <zone h='49059' id='3' name='Painel de Controle de Giro' w='89378' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49061' id='5' name='Matriz de Alertas de Compra' w='44689' x='483' y='49999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49061' id='10' name='Monitor de Sazonalidade e Volatilidade' w='44689' x='45172' y='49999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='98120' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='940'>
+                <zone h='8461' id='9' name='Matriz de Alertas de Compra' pane-specification-id='4' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:Calculation_2033844524838918:nk]' type-v2='color' w='9656' x='89861' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8461' id='11' name='Monitor de Sazonalidade e Volatilidade' pane-specification-id='0' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' type-v2='color' w='9656' x='89861' y='9401'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='15' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='280' h='49059' id='3' is-fixed='true' name='Painel de Controle de Giro' w='89378' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49061' id='5' is-fixed='true' name='Matriz de Alertas de Compra' w='44689' x='483' y='49999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8461' id='9' name='Matriz de Alertas de Compra' pane-specification-id='4' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:Calculation_2033844524838918:nk]' type-v2='color' w='9656' x='89861' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49061' id='10' is-fixed='true' name='Monitor de Sazonalidade e Volatilidade' w='44689' x='45172' y='49999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8461' id='11' name='Monitor de Sazonalidade e Volatilidade' pane-specification-id='0' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' type-v2='color' w='9656' x='89861' y='9401'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{738FD505-12E1-4839-A154-2B1A1B7D14F3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Painel de Controle de Giro'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card pane-specification-id='8' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E477D77D-5013-4EDB-9085-B79B9C9F4F6A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Matriz de Alertas de Compra'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card pane-specification-id='4' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:Calculation_2033844524838918:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B7908FB-0C5D-42AC-9E58-33FA34957504}' />
+    </window>
+    <window class='worksheet' name='Monitor de Sazonalidade e Volatilidade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card pane-specification-id='0' param='[federated.1as43rb1tmay0y1a509e51rvna6n].[none:id_produto:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DABC29A9-7266-442E-B8BA-40F11AE359F3}' />
+    </window>
+    <window class='dashboard' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Matriz de Alertas de Compra' />
+        <viewpoint name='Monitor de Sazonalidade e Volatilidade'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Painel de Controle de Giro' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EFA5C73F-14F4-438E-820B-E280FA44BBD5}' />
+    </window>
+  </windows>
+</workbook>
