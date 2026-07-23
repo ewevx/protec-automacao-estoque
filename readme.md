@@ -49,11 +49,11 @@ O projeto foi estruturado seguindo rigorosamente as abstrações do padrão **SO
 
 * **A. Simulação Financeira & Calibração de Regra de Negócio (Python)**: Para evitar que a volatilidade dos fornecedores inflasse o custo de peças caríssimas (Classe C), aplicamos a fórmula estatística de Greasley com uma trava de segurança no simulador.
 
-(docs/code_protec_simulacao.png)
+![Code Simulação](docs/code_protec_simulacao.png)
 
 * **Fórmula do Tableau para Alertas de Stockout (Lógica Não Agregada)**: No Tableau, para evitar mascarar ruídos diários com somatórios anuais, reescrevemos a fórmula de alerta para avaliar os registros dia a dia:
 
-[Status Alerta](docs/status_alerta.png)
+![Status Alerta](docs/status_alerta.png)
 
 ---
 
@@ -63,15 +63,15 @@ O projeto foi estruturado seguindo rigorosamente as abstrações do padrão **SO
 
 * **Painel de Controle de Giro**: Demonstra a divergência no tempo ("boca do jacaré") entre o custo fixo e elevado do modelo tradicional (linha azul) e o custo otimizado trazido pelo modelo preditivo de IA (linha laranja).
 
-[Controle de Giro](docs/visao1_controle_giro.png)
+![Controle de Giro](docs/visao1_controle_giro.png)
 
 * **Matriz de Alertas de Compra**: Monitoramento diário linha a linha que auxilia o time de suprimentos a identificar o teto de segurança e destaca em vermelho dias específicos com risco iminente de desabastecimento (stockout).
 
-[Alerta de Compra](docs/visao2_matriz_alertas.png)
+![Alerta de Compra](docs/visao2_matriz_alertas.png)
 
 * **Monitor de Sazonalidade e Volatilidade**: Acompanhamento gráfico das flutuações sazonais de mercado para os itens Classe A e controle dos atrasos logísticos dos fornecedores.
 
-[Monitor de Sazonalidade](docs/visao3_sazonalidade.png)
+![Monitor de Sazonalidade](docs/visao3_sazonalidade.png)
 
 ## 6. Como Reproduzir este Projeto
 
