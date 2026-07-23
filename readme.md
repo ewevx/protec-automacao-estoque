@@ -1,4 +1,4 @@
-# Otimização de Estoque Preditivo e Capital de Giro — Protec Automação
+# Otimização de Estoque Preditivo e Capital de Giro | Protec Automação
 
 ![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/LightGBM-Machine_Learning-GREEN?style=for-the-badge)
