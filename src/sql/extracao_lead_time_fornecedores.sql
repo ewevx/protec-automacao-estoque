@@ -5,7 +5,7 @@ SELECT
     data_emissao_pedido,
     data_recebimento_estoque,
     -- calcula a diferença em dias (Lead Time Real)
-    DATA_PART('day', data_recebimento_estoque - data_emissao_pedido) AS lead_time_real
+    DATE_PART('day', data_recebimento_estoque - data_emissao_pedido) AS lead_time_real
 FROM   
     pedidos_compra_erp
 WHERE
