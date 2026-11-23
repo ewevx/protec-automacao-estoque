@@ -75,7 +75,7 @@ Tableau Desktop ou Tableau Public
 **Passo a Passo**
 
 # 1. Clonar o repositório
-git clone https://github.com/ewevx/<protec-automacao-estoque>.git
+git clone https://github.com/ewevx/protec-automacao-estoque.git
 cd protec-automacao-estoque
 
 # 2. Criar e ativar o ambiente virtual
