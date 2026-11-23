@@ -21,7 +21,7 @@ O objetivo principal deste projeto foi construir uma **pipeline end-to-end autom
 
 ## 2. Impacto Financeiro Consolidado (ROI)
 
-Ao aplicar o modelo preditivo e calibrar as regras de negócio para componentes de alto valor imobilizado, a solução alcançou resultados financeiros expressivos:
+Ao aplicar o modelo preditivo e calibrar as regras de negócio para componentes de alto valor imobilizado, a solução alcançou resultados financeiros expressivos: **("Valor calculado sobre a base simulada, não é resultado real de empresa.")**
 
 * **Capital de Giro Liberado:** **R$ 696.330,91**
 * **Redução do Custo Imobilizado:** Suavização de custos de armazenagem desnecessários em itens Classe C (Itens de alto valor e baixa rotatividade).
