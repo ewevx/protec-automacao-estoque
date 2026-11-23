@@ -9,6 +9,8 @@
 
 ## 1. Visão Geral do Projeto e Contexto de Negócio
 
+### **"Os dados deste projeto são simulados. O MAE global de 2,95 unidades foi medido no horizonte de 2025 dessa base simulada."**
+
 A **Protec Automação** é uma distribuidora industrial B2B que enfrentava o desafio clássico da gestão de inventário em grande escala:
 * **Overstock (Excesso de Estoque):** Itens de alto valor unitário e baixa rotatividade (ex: Inversores de Frequência - Classe C) acumulavam custos astronômicos de retenção no galpão.
 * **Stockout (Ruptura de Estoque):** Componentes essenciais de alto giro (ex: Sensores Óticos - Classe A) sofriam com desabastecimento em momentos de picos operacionais, gerando atrasos em clientes industriais.
